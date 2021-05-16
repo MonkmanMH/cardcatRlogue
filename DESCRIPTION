@@ -1,0 +1,16 @@
+Package: cardcatRlogue
+Title: What the Package Does (One Line, Title Case)
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Martin",
+           family = "Monkman",
+           role = c("aut", "cre"),
+           email = "martin.monkman@gmail.com",
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: An R package to manage a single set of book and package .bib files across multiple books.
+URL: https://github.com/MonkmanMH/cardcatRlogue
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.0

@@ -26,7 +26,7 @@ copy_bib_book <- function(){
 }
 
 #' @export
-copy_bib_package <- function(){
+copy_bib_packages <- function(){
   localpath <- getwd()
   #
   filepath <- system.file("data", "packages.bib", package = "cardcatRlogue")
