@@ -1,8 +1,17 @@
-# functions
-
-
-# copy the book.bib & package.bib file to the current directory
-
+#' Copy .bib files
+#'
+#' Copy the book.bib & package.bib files to the current working directory.
+#'
+#' NOTE: The functions will overwrite any existing files with the same name.
+#'
+#' `copy_bib()` copies both files, or each can be copied individually.
+#'
+#'
+#' @examples
+#' copy_bib()
+#' copy_bib_book()
+#' copy_bib_packages()
+#'
 #' @export
 copy_bib <- function(){
   localpath <- getwd()
@@ -15,8 +24,6 @@ copy_bib <- function(){
 }
 
 
-# copy the book.bib file to the current directory
-
 #' @export
 copy_bib_book <- function(){
   localpath <- getwd()
@@ -24,6 +31,7 @@ copy_bib_book <- function(){
   filepath <- system.file("data", "book.bib", package = "cardcatRlogue")
   file.copy(filepath, localpath, overwrite = TRUE)
 }
+
 
 #' @export
 copy_bib_packages <- function(){
